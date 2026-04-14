@@ -25,15 +25,14 @@ usage: minetep.py [-h] [--path PATH] [--mode MODE] [-n N]
                   [-it IT] [-step STEP] [-scell SCELL]
 
 optional arguments:
-  -h, --help            show this help message and exit
+  -h, --help            show this help message and exit.
   --path PATH           path to directory to save structure files to or load
                         input files from; default: current directory. For
                         optimisation or stability testing, or extraction of
                         thermodynamic data, specify path to input file
                         (including the filename).
   -n N                  number of atoms; only required for structure
-                        generation
-  --mode MODE		s for structure generation, o for optimization
+                        generation.
   --structure STRUCTURE
                         specify Bravais lattice to be generated; default
                         triclinic,'t' tetragonal, 'o' orthorhombic, 'c' cubic.
@@ -42,17 +41,17 @@ optional arguments:
                         argument is required. Otherwise all lattice parameters
                         will be changed.
   -k K                  number of structures to be generated; only required
-                        for structure generation, default=1
+                        for structure generation, default=1.
   -r R                  atomic radius ; only required for structure
-                        generation; default=1.11
+                        generation; default=1.11.
   -bsh BSH              type of minimisation: 1 for basinhopping, 0 for simple
                         L-BFGS-B. Required for structure optimisation.
   -T T                  temperature of the basinhopping algorithm. Required if
-                        bsh is 1
+                        bsh is 1.
   -it IT                number of iterations of the basinhopping algorithm.
-                        Required if bsh is 1
+                        Required if bsh is 1.
   -step STEP            stepsize of the basinhopping algorithm. Required if
-                        bsh is 1
+                        bsh is 1.
   -scell SCELL          Specify whether to use the supercell or unit cell in
                         computing the eigenfrequencies. s for supercell and u
                         for unit cell.
